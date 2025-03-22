@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 images, lists, tables, forms and input types</title>
+</head>
+<body>
+    <h2>Continents</h2>
+    <H3>Continents of the World</H3>
+    <ol type="i">
+        <li>Africa</li>
+        <li>Europe</li>
+        <li>South America</li>
+        <li>North America</li>
+        <li>Asia</li>
+    </ol>
+    <h2>Beautiful Oceans surrounding the Globe</h2>
+    <img src="https://plus.unsplash.com/premium_photo-1727122971717-fb0a7e573002?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmVhdXRpZnVsJTIwc3Vuc2V0JTIwYWNyb3NzJTIwdGhlJTIwb2NlYW58ZW58MHx8MHx8fDA%3D" alt="Beautiful sunset over the ocean">
+    
+    <h2>Contact information</h2>
+    <table border="1px border black">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+
+        <tr>
+            <td>Aisha Abdala</td>
+            <td>Alminiti, Mshomoroni Kenya</td>
+            <td>+254 734598093</td>
+            <td>tedir@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Alimrue Bagai</td>
+            <td>Jocham road, Mombasa Kenya</td>
+            <td>+254 7345989893</td>
+            <td>seruo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Kimatope Oswar</td>
+            <td>South coast, Diani Kenya</td>
+            <td>+254 7323438093</td>
+            <td>hmils@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Swaleh Mdohe</td>
+            <td>GPO, Nairobi Kenya</td>
+            <td>+254 7345985670</td>
+            <td>kmdohe@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Mwinyihatibu Ali</td>
+            <td>Jomvu, Mombasa Kenya</td>
+            <td>+254 7345985670</td>
+            <td>mwinyi@gmail.com</td>
+        </tr>
+    </table>
+    <h2 style="text-align: center;">Registration Form</h2>
+    <form action="submit_form.php" method="POST">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a secure password" required minlength="8">
+
+        <!-- Date of Birth Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown for Gender -->
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <!-- Radio Buttons for Subscription -->
+         <div class="radio-group">
+            <label>Subscribe to Newsletter:</label><br>
+            <input type="radio" id="yes" name="subscribe" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="subscribe" value="no" required>
+            <label for="no">No</label>
+         </div>
+
+        <!-- Checkboxes for Interests -->
+        <div class="checkbox-group">
+            <label>Select Your Interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="travel" name="interests" value="travel">
+            <label for="travel">Travel</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>   
+</body>
+</html>
